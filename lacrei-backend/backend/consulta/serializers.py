@@ -1,8 +1,9 @@
 from rest_framework import serializers
+from core.base_serializer import BaseSerializer
 from consulta.models import Consulta
 from datetime import date
 
-class ConsultaSerializer(serializers.ModelSerializer):
+class ConsultaSerializer(BaseSerializer, serializers.ModelSerializer):
     class Meta:
         model = Consulta
         fields = '__all__'

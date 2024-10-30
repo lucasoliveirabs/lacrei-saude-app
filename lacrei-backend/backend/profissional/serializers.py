@@ -1,7 +1,8 @@
 from rest_framework import serializers
 from profissional.models import Profissional
+from core.base_serializer import BaseSerializer
 
-class ProfissionalSerializer(serializers.ModelSerializer):
+class ProfissionalSerializer(BaseSerializer, serializers.ModelSerializer):
     class Meta:
         model = Profissional
         fields = '__all__'
