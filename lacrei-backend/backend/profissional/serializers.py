@@ -4,7 +4,7 @@ from profissional.models import Profissional
 class ProfissionalSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profissional
-        fields = ['id', 'nome', 'nome_social', 'profissao', 'endereco', 'contato']
+        fields = '__all__'
 
     def validate_contato(self, value):
         cleaned_value = value.replace(" ", "")
