@@ -60,12 +60,12 @@ Confirme ter os seguintes softwares instalados:
 
 ## **Rodar o Servidor com HTTPS**
 
-Execute o seguinte comando para rodar o servidor com **HTTPS**:
+Em ./backend/ execute o seguinte comando para rodar o servidor com **HTTPS**:
 
 ```bash
 poetry run python manage.py runserver_plus --cert-file cert.pem --key-file key.pem
 ```
 
 O servidor estará disponível em: [https://127.0.0.1:8000](https://127.0.0.1:8000)
-E a documentação Swagger em: [https://127.0.0.1:8000/swagger/](https://127.0.0.1:8000/swagger/)
+A documentação Swagger redirecionada por padrão e disponível em: [https://127.0.0.1:8000/swagger/](https://127.0.0.1:8000/swagger/)
 
