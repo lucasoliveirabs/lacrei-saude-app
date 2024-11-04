@@ -3,9 +3,12 @@
 
 ## **Descrição**
 Este é o frontend do projeto **Lacrei Saúde**, desenvolvido em **Next.js** e projetada com uma navegação intuitiva que segue o guia de estilo da Lacrei Saúde. Consiste em dois formulários, um para cadastro de profissional e outro para cadastro de consulta.
-O frontend está disponível em https://lacrei-saude-app.vercel.app/cadastro-profissional. Antes, prefira configurar e rodar o backend localmente.
+
+O frontend está disponível no [Vercel](https://lacrei-saude-app.vercel.app/cadastro-profissional). Antes, prefira configurar e rodar o backend localmente.
 
 ---
+
+## **Executar a Aplicação em Desenvolvimento**
 
 ## **Requisitos**
 
@@ -27,10 +30,6 @@ Confirme ter os seguintes softwares instalados:
    # ou
    yarn install
    ```
----
-
-## **Executar a Aplicação em Desenvolvimento**
-
 Para que a aplicação funcione corretamente, crie um arquivo `.env` na raiz do projeto e defina as variáveis de ambiente necessárias. Por exemplo:
 
 ```env

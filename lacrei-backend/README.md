@@ -2,7 +2,7 @@
 # **Lacrei Saúde - Backend**
 
 ## **Descrição**
-Este é o backend do projeto **Lacrei Saúde**, desenvolvido com **Django** e **Django REST Framework (DRF)**. Ele inclui APIs para **Consultas** e **Profissionais**, com a documentação acessível via **Swagger UI**. Para testar a aplicação de localmente utilizando **HTTPS** confira:
+Este é o backend do projeto **Lacrei Saúde**, desenvolvido com **Django** e **Django REST Framework (DRF)**. Ele inclui APIs para **Consultas** e **Profissionais**, com documentação acessível via **Swagger UI**. Para testar a aplicação de localmente utilizando **HTTPS** confira:
 
 ---
 
@@ -67,6 +67,7 @@ poetry run python manage.py runserver_plus --cert-file cert.pem --key-file key.p
 ```
 
 O servidor estará disponível em: [https://127.0.0.1:8000](https://127.0.0.1:8000)
+
 A documentação Swagger redirecionada por padrão e disponível em: [https://127.0.0.1:8000/swagger/](https://127.0.0.1:8000/swagger/)
 
 

@@ -4,5 +4,5 @@ Projeto requisitado como atividade inicial de voluntariado como Tech Lead no pro
 
 A aplicação contém os componentes **backend** e **frontend**, cada um possuindo seu próprio README com instruções detalhadas para configuração e execução. Fique à vontade para clonar, testar, contribuir e melhorar:
 
-[Documentação do Backend](./lacrei-backend/README.md)
+[Documentação do Backend](./lacrei-backend/README.md)   |   
 [Documentação do Frontend](./lacrei-frontend/README.md)
