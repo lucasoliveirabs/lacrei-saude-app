@@ -22,7 +22,7 @@ export default function ConsultaForm() {
   useEffect(() => {
     const fetchProfissionais = async () => {
       try {
-        const response = await fetch('https://localhost:8000/api/profissionais/', {
+        const response = await fetch('${process.env.LOCALHOST_API_BASE_URL}/profissionais/', {
           method: 'GET',
           headers: { 'Content-Type': 'application/json' },
         });
@@ -59,7 +59,7 @@ export default function ConsultaForm() {
     };
 
     try {
-      const response = await fetch('https://localhost:8000/api/consultas/', {
+      const response = await fetch('${process.env.LOCALHOST_API_BASE_URL}/consultas/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formattedData),
@@ -72,6 +72,9 @@ export default function ConsultaForm() {
         setShowErrorModal(true);
       }
     } catch (err) {
+      if (process.env.NODE_ENV === 'development') {
+        console.error('Detalhes do erro:', err);
+      }
       setErrorMessage('Ocorreu um erro ao tentar cadastrar a consulta. Tente novamente mais tarde.');
       setShowErrorModal(true);
     }

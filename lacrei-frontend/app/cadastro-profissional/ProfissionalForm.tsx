@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import ErrorModal from '../components/ErrorModal';
 import SuccessModal from '../components/SuccessModal';
@@ -29,7 +29,7 @@ export default function ProfissionalForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     try {
       e.preventDefault();
-      const response = await fetch('https://localhost:8000/api/profissionais/', {
+      const response = await fetch('${process.env.LOCALHOST_API_BASE_URL}/profissionais/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -42,6 +42,9 @@ export default function ProfissionalForm() {
         setShowErrorModal(true);
       }
     } catch(err){
+      if (process.env.NODE_ENV === 'development') {
+          console.error('Detalhes do erro:', err);
+      }
       setErrorMessage('Ocorreu um erro ao tentar cadastrar a pessoa profissional. Tente novamente mais tarde.');
       setShowErrorModal(true);
     }
