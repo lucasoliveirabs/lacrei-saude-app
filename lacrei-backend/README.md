@@ -69,3 +69,4 @@ poetry run python manage.py runserver_plus --cert-file cert.pem --key-file key.p
 O servidor estará disponível em: [https://127.0.0.1:8000](https://127.0.0.1:8000)
 A documentação Swagger redirecionada por padrão e disponível em: [https://127.0.0.1:8000/swagger/](https://127.0.0.1:8000/swagger/)
 
+
